@@ -8,7 +8,7 @@ Terratest é uma biblioteca Go desenvolvida na Gruntwork, que facilita a escrit
 - cd test <br />
 - go mod init "<MODULE_NAME>" <br />
 - **MODULE_NAME would be github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>** <br />
-- go mod init github.com/imnitin28/terra-form-test-techhub <br />
+- go mod init github.com/Thadeu84/terraform_aws_ec2_test <br />
 - go run
 
 ---
