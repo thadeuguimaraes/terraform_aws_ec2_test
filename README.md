@@ -1,23 +1,27 @@
-# terra-form-test-techhub
-Terratest is a Go library developed at Gruntwork, that makes it easier to write automated tests for our infrastructure code. It provides a variety of helper functions and patterns for common infrastructure testing tasks but here we will be discussing about Testing Terraform code.
+# terraform_aws_ec2_test
 
-# To Run this application
-* git clone https://github.com/imnitin28/terra-form-test-techhub.git  <br />
-* cd test  <br />
-* go mod init "<MODULE_NAME>"  <br />
-* **MODULE_NAME would be github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>**  <br />
-* go mod init github.com/imnitin28/terra-form-test-techhub  <br />
-* go run
+Terratest é uma biblioteca Go desenvolvida na Gruntwork, que facilita a escrita de testes automatizados para nosso código de infraestrutura. Ele fornece uma variedade de funções auxiliares e padrões para tarefas comuns de teste de infraestrutura, mas aqui discutiremos sobre como testar o código do Terraform.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Para executar este aplicativo
 
-go mod init "<MODULE_NAME>" would create go.mod file into test folder.  <br />
-* The go.mod file is the root of dependency management in GoLang. 
-* All the modules which are needed or to be used in the project are maintained here in go.mod file.
-* It creates entry for all the packages we are going to use/import in our project.
-* It reduces effort for getting each dependencies manually.
+- git clone
+- cd test <br />
+- go mod init "<MODULE_NAME>" <br />
+- **MODULE_NAME would be github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>** <br />
+- go mod init github.com/imnitin28/terra-form-test-techhub <br />
+- go run
 
-On running **go test** for the first time you would get go.sum file created.
-* go.sum file is created when **go test** or **go build** is executed for the first time.
-* It installs all the packages with specific version(latest)
-* we do not need to edit or modify this file.
+---
+
+go mod init "<MODULE_NAME>" criaria o arquivo go.mod na pasta de teste. <br />
+
+- O arquivo go.mod é a raiz do gerenciamento de dependências no GoLang.
+- Todos os módulos que são necessários ou serão utilizados no projeto são mantidos aqui no arquivo go.mod.
+- Cria entrada para todos os pacotes que vamos usar/importar em nosso projeto.
+- Reduz o esforço para obter cada dependência manualmente.
+
+Ao executar **go test** pela primeira vez, você obteria o arquivo go.sum criado.
+
+- O arquivo go.sum é criado quando **go test** ou **go build** é executado pela primeira vez.
+- Instala todos os pacotes com versão específica (mais recente)
+- não precisamos editar ou modificar este arquivo.

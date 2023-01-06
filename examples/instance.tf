@@ -6,7 +6,7 @@ resource "aws_instance" "example" {
   # When the instance boots, start a web server on port 8080 that responds with "Hello, World!".
   user_data = <<EOF
 #!/bin/bash
-echo "Hello, World!" > index.html
+echo "Hello, Matrix!" > index.html
 nohup busybox httpd -f -p 8080 &
 EOF
 }
